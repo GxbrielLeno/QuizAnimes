@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+:root {
+  --background-color: #252525;
+  --color-secudary: #1efc4e;
+  --text-color: #ececec;
+  --background-color-secundary: #00c22a;
+  /* neon color */
+  --neon-primary: #00ff37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  background-color: var(--background-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 10px 1px black;
+  padding: 16px;
+  border-radius: 11px;
+  background-color: var(--background-color-secundary);
+  width: 500px;
+}
+
+.questionsdiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question {
+  font-size: 22px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.spnQtd {
+  align-self: end;
+}
+
+span {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.answers {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button {
+  width: 210px;
+  margin: 3px;
+  background-color: transparent;
+  border: 1px solid;
+  border-image: linear-gradient(to right, rgb(115, 255, 0), rgb(0, 201, 236)) 1;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+  font-size: 19px;
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.finish button {
+  text-align: center;
+}
+
+button:hover {
+  background-color: transparent;
+  border-image: linear-gradient(to right, rgb(0, 183, 255), rgb(115, 255, 0)) 1;
+}
+
+/* Neon Text */
+
+h1 {
+  font-size: calc(12px + 12vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px var(--neon-primary), 0 0 15px var(--neon-primary), 0 0 20px var(--neon-primary), 0 0 40px var(--neon-primary), 0 0 60px #ffac3f, 0 0 10px var(--neon-primary), 0 0 98px #ffac3f;
+  color: var(--text-color);
+  font-family: "Sacramento", cursive !important;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px var(--neon-primary), 0 0 15px var(--neon-primary), 0 0 20px var(--neon-primary), 0 0 40px var(--neon-primary);
+    color: var(--text-color);
+  }
+}
+
+@keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px var(--neon-primary), 0 0 15px var(--neon-primary), 0 0 20px var(--neon-primary), 0 0 40px var(--neon-primary);
+    color: var(--text-color);
+  }
+}
+@media (max-width: 600px)
+{
+  h1
+   {
+    font-size: 60px;
+   }
+   main {
+    width: 95%;
+   }
+}
