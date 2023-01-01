@@ -1,5 +1,6 @@
 # Quiz Animes
-<p>Este é um projeto utilizando feito totalmente por mim, utilizei 4 paleta de cores diferente para estilização do CSS e um arquivo JSON com as quests.</p>
+<p>Este é um projeto utilizando feito totalmente por mim, utilizei 4 paleta de cores diferente para estilização do CSS e um arquivo JSON com as quests.
+Projeto totalmente Responsivo com mobile!</p>
 
 
 <h3>Link para ver o projeto no ar</h3>
